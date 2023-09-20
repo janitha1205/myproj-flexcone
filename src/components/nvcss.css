@@ -1,0 +1,89 @@
+
+  body{
+      margin: 0;
+      padding: 0;
+      color: #e8eded;  /* body colour */
+  }
+  nav{
+     /* nav bar properties */
+      margin: 10;
+      padding: 10;
+  }
+  nav ul {
+    /* inline items properties*/
+      margin: 0;
+      margin-left: 290px;
+      padding: 8px 5px;
+      list-style: none;
+      display: flex;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.3);
+      background-color: #f7fafc;
+  }
+  nav ul li {
+      padding: 3px;/*padding between icons*/
+  }
+  nav ul li a{
+      display: inline-block;/*horizontal listing*/
+      text-decoration: none;
+  }
+.name-feild{
+/*profile pic properties*/
+font-size: 15px;
+margin-top: 0px;
+margin-bottom: 0px;
+
+}
+.cat{
+    /*cat feild properties*/
+font-size: 12px;
+text-align: right;
+
+}
+  nav ul li#space1{
+      flex: 1;/*between fliexiblity properties*/
+  }
+  nav ul li#space2{
+      flex: 200;/*between fliexiblity properties*/
+  }
+  nav ul li a{/*a selector properties*/
+      height: 40px;
+      width: var(--btn-width-100);
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(158, 158, 158);
+      transition: .5s;
+
+  }
+
+
+
+
+  /*prf pic  properties*/
+.profile{
+
+
+    height: 45px;
+    border-radius: 50px;
+
+}
+  /*size fliexiblity properties*/
+  @media  screen and (max-width: 500px){
+      nav ul li#space1,
+      nav ul li#space2{
+        
+          display: none;
+      }
+      nav ul{
+          min-width: 600px;
+          padding: 8px 12px;
+        justify-content: space-between;
+      }
+      :root{
+          --btn-width-100: 60px;
+      }
+  }
+
+
+ 
